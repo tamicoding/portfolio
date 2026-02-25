@@ -1,16 +1,89 @@
-# React + Vite
+US English
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio
 
-Currently, two official plugins are available:
+This is my personal developer portfolio, built to showcase my projects, technical skills, and growth as a software developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The portfolio was designed with a focus on clean UI, responsive layout, and a modern dark theme, providing a smooth and accessible browsing experience.
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Deployment:  
+https://portfolio-iokrelkhk-tamicodings-projects.vercel.app
 
-## Expanding the ESLint configuration
+## About the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio serves as a central hub for presenting my work, highlighting selected projects and the technologies I use.
+
+It was developed as a Single Page Application (SPA), emphasizing simplicity, performance, and usability.
+
+## Features
+
+- Responsive design for desktop and mobile
+- Modern dark-themed interface
+- Smooth navigation between sections
+- Highlighted project showcase
+- Skills overview
+- Contact section
+
+## Tech Stack
+
+- React
+- JavaScript (ES6+)
+- CSS
+- Vite
+
+## Purpose
+
+The main objective of this project is to provide a professional presentation of my work for recruiters, collaborators, and potential employers.
+
+## Author
+
+Tamiris Reis  
+LinkedIn: https://www.linkedin.com/in/tamirisfreis/   
+GitHub: https://github.com/tamicoding
+
+PT-BR
+
+# Portfólio
+
+Este é o meu portfólio pessoal como desenvolvedora, criado para apresentar meus projetos, habilidades técnicas e evolução na área de desenvolvimento de software.
+
+O portfólio foi desenvolvido com foco em uma interface limpa, layout responsivo e um tema dark moderno, proporcionando uma navegação fluida e agradável.
+
+## Demonstração
+
+Deploy:  
+https://portfolio-iokrelkhk-tamicodings-projects.vercel.app
+
+## Sobre o Projeto
+
+Este portfólio funciona como um ponto central para exibir meu trabalho, destacando projetos selecionados e as tecnologias que utilizo.
+
+Foi construído como uma Single Page Application (SPA), priorizando simplicidade, performance e boa experiência do usuário.
+
+## Funcionalidades
+
+- Layout responsivo para desktop e mobile
+- Interface moderna em tema dark
+- Navegação suave entre seções
+- Exibição de projetos em destaque
+- Seção de habilidades
+- Área de contato
+
+## Tecnologias Utilizadas
+
+- React
+- JavaScript (ES6+)
+- CSS
+- Vite
+
+## Objetivo
+
+O principal objetivo deste projeto é oferecer uma apresentação profissional do meu trabalho para recrutadores, colaboradores e potenciais empregadores.
+
+## Autora
+
+Tamiris Reis  
+LinkedIn: https://www.linkedin.com/in/tamirisfreis/   
+GitHub: https://github.com/tamicoding
