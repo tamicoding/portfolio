@@ -1,7 +1,34 @@
 const skills = {
-  Frontend: ["React", "JavaScript", "HTML", "CSS", "Responsividade"],
-  Backend: ["Node.js", "APIs REST", "PostgreSQL"],
-  Ferramentas: ["Git/GitHub", "Vite", "Figma (básico)"],
+  Frontend: [
+    "React.js",
+    "JavaScript",
+    "ES6+",
+    "DOM Manipulation",
+    "Async JavaScript (Promises / async-await)",
+    "Fetch API / Axios",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "jQuery",
+    "Form Handling & Validation",
+    "Responsive Design"
+  ],
+  Backend: [
+    "Node.js",
+    "Express.js",
+    "API REST / RESTful",
+    "HTTP Methods",
+    "Routing",
+    "Express Middleware",
+    "Authentication (Sessions / Cookies)",
+    "Environment Variables (.env)",
+    "JSON",
+    "CRUD",
+    "SQL",
+    "PostgreSQL",
+    "EJS"
+  ],
+  Ferramentas: ["Git/GitHub", "NPM / Yarn", "Vite", "Figma (básico)"],
 };
 
 export default function Skills() {
