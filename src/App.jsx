@@ -5,9 +5,28 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [language, setLanguage] = useState(() => {
+    const savedLanguage = localStorage.getItem("language");
+    return savedLanguage === "en-US" ? "en-US" : "pt-BR";
+  });
+
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "light" ? "light" : "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    localStorage.setItem("language", language);
+  }, [language]);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
@@ -34,13 +53,18 @@ export default function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar
+        language={language}
+        onChangeLanguage={setLanguage}
+        theme={theme}
+        onToggleTheme={() => setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"))}
+      />
       <main>
-        <Hero />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
+        <Hero language={language} />
+        <Projects language={language} />
+        <Skills language={language} />
+        <Contact language={language} />
+        <Footer language={language} />
       </main>
     </>
   );
