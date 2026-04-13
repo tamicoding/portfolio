@@ -2,8 +2,8 @@ const projects = [
   {
     title: "BookNotes",
     description: {
-      "pt-BR": "Aplicação full-stack para organizar livros, notas e avaliações em um único fluxo.",
-      "en-US": "Full-stack application to organize books, notes, and ratings in one seamless flow."
+      "pt-BR": "Aplicação full-stack para gerenciamento de livros, permitindo adicionar, avaliar e organizar leituras com persistência em banco de dados. Possui sistema CRUD completo, integração com API e interface dinâmica construída com React.",
+      "en-US": "Full-stack application for book management, allowing users to add, review, and organize their readings with database persistence. Features a complete CRUD system, API integration, and a dynamic interface built with React."
     },
     tech: ["React", "Node.js", "PostgreSQL"],
     live: "https://book-notes-vvs0.onrender.com",
@@ -12,8 +12,8 @@ const projects = [
   {
     title: "Simon Game",
     description: {
-      "pt-BR": "Jogo de memória interativo feito em React com progressão por níveis e feedback visual em tempo real.",
-      "en-US": "Interactive memory game built with React, featuring level progression and real-time visual feedback."
+      "pt-BR": "Jogo de memória interativo desenvolvido com React, com progressão por níveis e feedback visual em tempo real. Possui lógica de validação de jogadas, controle de estado e aumento gradual de dificuldade para melhorar a experiência do usuário.",
+      "en-US": "Interactive memory game built with React, featuring level progression and real-time visual feedback. Includes game logic validation, state management, and increasing difficulty to enhance user experience."
     },
     tech: ["React", "JavaScript"],
     live: "https://simon-game-react-nine.vercel.app/",
@@ -22,8 +22,8 @@ const projects = [
   {
     title: "Star Wars Universe",
     description: {
-      "pt-BR": "Projeto frontend temático que centraliza conteúdos do universo Star Wars com navegação intuitiva.",
-      "en-US": "Themed frontend project that centralizes Star Wars universe content with intuitive navigation."
+      "pt-BR": "Projeto frontend temático que centraliza conteúdos do universo Star Wars, com navegação intuitiva e interface dinâmica. Consome dados de APIs externas para exibir informações sobre personagens, planetas e filmes, proporcionando uma experiência interativa ao usuário.",
+      "en-US": "Themed frontend project that centralizes content from the Star Wars universe, featuring intuitive navigation and a dynamic interface. Consumes data from external APIs to display information about characters, planets, and films, providing an interactive user experience."
     },
     tech: ["HTML", "CSS", "JavaScript"],
     live: "https://tamicoding.github.io/starwars-universe/",
@@ -33,8 +33,8 @@ const projects = [
     title: "Sábios do Multiverso",
   titleEn: "Sages of the Multiverse",
     description: {
-      "pt-BR": "Site de frases famosas traduzidas, com consumo de API para buscar e exibir citações dinamicamente.",
-      "en-US": "Website of translated famous quotes using an API to fetch and display citations dynamically."
+      "pt-BR": "Site de frases famosas traduzidas, com consumo de API para buscar e exibir citações dinamicamente. Permite explorar diferentes autores e conteúdos em tempo real, com foco em integração de dados externos e renderização dinâmica na interface.",
+      "en-US": "Website for translated famous quotes, using API consumption to dynamically fetch and display quotations. Allows users to explore different authors and content in real time, focusing on external data integration and dynamic rendering in the interface."
     },
     tech: ["HTML", "CSS", "JavaScript"],
     live: "https://sabios-do-multiverso.onrender.com",
