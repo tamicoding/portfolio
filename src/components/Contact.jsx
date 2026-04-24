@@ -7,7 +7,13 @@ export default function Contact({ language }) {
         <h2 className="section__title">{isEnglish ? "Contact" : "Contato"}</h2>
 
         <p className="contact__text">
-          {isEnglish ? "Liked my work? 💬" : "Curtiu meu trabalho? 💬"}
+          {isEnglish ? "Looking for a developer to build interfaces, APIs, or complete web projects?" : "Buscando uma desenvolvedora para criar interfaces, APIs ou projetos web completos?"}
+        </p>
+
+        <p className="contact__subtext">
+          {isEnglish
+            ? "I am available for freelance work, junior opportunities, and remote collaborations."
+            : "Estou disponível para freelas, oportunidades júnior e colaborações remotas."}
         </p>
 
         <div className="contact__actions">

@@ -1,35 +1,22 @@
 const skills = {
   Frontend: [
-    "React.js",
+    "React",
     "JavaScript",
-    "ES6+",
-    "DOM Manipulation",
-    "Async JavaScript (Promises / async-await)",
-    "Fetch API / Axios",
     "HTML5",
     "CSS3",
-    "Bootstrap",
-    "jQuery",
-    "Form Handling & Validation",
-    "Responsive Design"
+    "Responsive Design",
+    "API Integration"
   ],
   Backend: [
     "Node.js",
     "Express.js",
-    "API REST / RESTful",
-    "HTTP Methods",
-    "Routing",
-    "Express Middleware",
-    "Authentication (Sessions / Cookies)",
-    "Environment Variables (.env)",
-    "JSON",
-    "CRUD",
-    "SQL",
+    "REST APIs",
     "PostgreSQL",
-    "EJS"
+    "Authentication",
+    "CRUD Applications"
   ],
-  Ferramentas: ["Git/GitHub", "NPM / Yarn", "Vite", "Figma (básico)"],
-  Tools: ["Git/GitHub", "NPM / Yarn", "Vite", "Figma (basic)"],
+  Ferramentas: ["Git & GitHub", "npm", "Vite", "Figma"],
+  Tools: ["Git & GitHub", "npm", "Vite", "Figma"],
 };
 
 export default function Skills({ language }) {
@@ -47,7 +34,7 @@ export default function Skills({ language }) {
     };
 
   return (
-    <section className="section section--alt reveal" id="skills">
+    <section className="section section--alt section--skills reveal" id="skills">
       <div className="container">
         <h2 className="section__title">Skills</h2>
 

@@ -10,13 +10,18 @@ import { useEffect, useState } from "react";
 export default function App() {
   const [language, setLanguage] = useState(() => {
     const savedLanguage = localStorage.getItem("language");
-    return savedLanguage === "en-US" ? "en-US" : "pt-BR";
+    if (savedLanguage === "en-US" || savedLanguage === "pt-BR") {
+      return savedLanguage;
+    }
+
+    return document.documentElement.lang === "en-US" ? "en-US" : "pt-BR";
   });
 
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     return savedTheme === "light" ? "light" : "dark";
   });
+  const [activeSection, setActiveSection] = useState("topo");
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -51,6 +56,34 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const sections = Array.from(document.querySelectorAll("main section[id]"));
+
+    if (!sections.length || !("IntersectionObserver" in window)) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const currentEntry = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (currentEntry) {
+          setActiveSection(currentEntry.target.id);
+        }
+      },
+      {
+        rootMargin: "-20% 0px -55% 0px",
+        threshold: [0.25, 0.45, 0.65],
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <Navbar
@@ -58,6 +91,7 @@ export default function App() {
         onChangeLanguage={setLanguage}
         theme={theme}
         onToggleTheme={() => setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"))}
+        activeSection={activeSection}
       />
       <main>
         <Hero language={language} />

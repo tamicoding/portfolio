@@ -1,9 +1,16 @@
+import booksPreview from "../assets/projects/optimized/books.jpg";
+import sabiosPreview from "../assets/projects/optimized/sabios.jpg";
+import simonPreview from "../assets/projects/optimized/simon.jpg";
+import swPreview from "../assets/projects/optimized/sw.jpg";
+
 const projects = [
   {
     title: "BookNotes",
+    image: booksPreview,
+    imageAlt: "Preview do projeto BookNotes",
     description: {
-      "pt-BR": "Aplicação full-stack para gerenciamento de livros, permitindo adicionar, avaliar e organizar leituras com persistência em banco de dados. Possui sistema CRUD completo, integração com API e interface dinâmica construída com React.",
-      "en-US": "Full-stack application for book management, allowing users to add, review, and organize their readings with database persistence. Features a complete CRUD system, API integration, and a dynamic interface built with React."
+      "pt-BR": "Aplicação full stack para gerenciar leituras. Implementei CRUD completo, persistência em PostgreSQL, integração com API externa e interface em React para cadastrar, editar e acompanhar livros.",
+      "en-US": "Full-stack app for managing reading progress. I implemented full CRUD, PostgreSQL persistence, external API integration, and a React interface to create, edit, and track books."
     },
     tech: ["React", "Node.js", "PostgreSQL"],
     live: "https://book-notes-vvs0.onrender.com",
@@ -11,9 +18,11 @@ const projects = [
   },
   {
     title: "Simon Game",
+    image: simonPreview,
+    imageAlt: "Preview do projeto Simon Game",
     description: {
-      "pt-BR": "Jogo de memória interativo desenvolvido com React, com progressão por níveis e feedback visual em tempo real. Possui lógica de validação de jogadas, controle de estado e aumento gradual de dificuldade para melhorar a experiência do usuário.",
-      "en-US": "Interactive memory game built with React, featuring level progression and real-time visual feedback. Includes game logic validation, state management, and increasing difficulty to enhance user experience."
+      "pt-BR": "Jogo de memória em React com foco em lógica e estado. Implementei validação de sequência, progressão por níveis, feedback visual em tempo real e aumento gradual de dificuldade.",
+      "en-US": "React memory game focused on logic and state management. I implemented sequence validation, level progression, real-time visual feedback, and gradual difficulty scaling."
     },
     tech: ["React", "JavaScript"],
     live: "https://simon-game-react-nine.vercel.app/",
@@ -21,26 +30,29 @@ const projects = [
   },
   {
     title: "Star Wars Universe",
+    image: swPreview,
+    imageAlt: "Preview do projeto Star Wars Universe",
     description: {
-      "pt-BR": "Projeto frontend temático que centraliza conteúdos do universo Star Wars, com navegação intuitiva e interface dinâmica. Consome dados de APIs externas para exibir informações sobre personagens, planetas e filmes, proporcionando uma experiência interativa ao usuário.",
-      "en-US": "Themed frontend project that centralizes content from the Star Wars universe, featuring intuitive navigation and a dynamic interface. Consumes data from external APIs to display information about characters, planets, and films, providing an interactive user experience."
+      "pt-BR": "Frontend temático para explorar dados do universo Star Wars. Consumi APIs externas, organizei informações de personagens, planetas e filmes e criei uma navegação visual e interativa.",
+      "en-US": "Themed frontend for exploring Star Wars universe data. I consumed external APIs, organized character, planet, and film information, and built a visual, interactive navigation flow."
     },
     tech: ["HTML", "CSS", "JavaScript"],
     live: "https://tamicoding.github.io/starwars-universe/",
     repo: "https://github.com/tamicoding/starwars-universe"
   },
-{
+  {
     title: "Sábios do Multiverso",
-  titleEn: "Sages of the Multiverse",
+    titleEn: "Sages of the Multiverse",
+    image: sabiosPreview,
+    imageAlt: "Preview do projeto Sábios do Multiverso",
     description: {
-      "pt-BR": "Site de frases famosas traduzidas, com consumo de API para buscar e exibir citações dinamicamente. Permite explorar diferentes autores e conteúdos em tempo real, com foco em integração de dados externos e renderização dinâmica na interface.",
-      "en-US": "Website for translated famous quotes, using API consumption to dynamically fetch and display quotations. Allows users to explore different authors and content in real time, focusing on external data integration and dynamic rendering in the interface."
+      "pt-BR": "Aplicação para exibir citações traduzidas de forma dinâmica. Integrei API para buscar frases em tempo real, organizei autores e renderizei o conteúdo com atualização direta na interface.",
+      "en-US": "Application for displaying translated quotes dynamically. I integrated an API to fetch quotes in real time, organized authors, and rendered updated content directly in the interface."
     },
     tech: ["HTML", "CSS", "JavaScript"],
-    live: "https://sabios-do-multiverso.onrender.com",
+    live: "https://sabios-do-multiverso.vercel.app/",
     repo: "https://github.com/tamicoding/sabios-do-multiverso"
   }
-
 ];
 
 export default function Projects({ language }) {
@@ -54,6 +66,12 @@ export default function Projects({ language }) {
         <div className="grid grid--2">
           {projects.map(project => (
             <div className="card" key={project.title}>
+              <img
+                className="card__preview"
+                src={project.image}
+                alt={project.imageAlt}
+                loading="lazy"
+              />
               <h3>{isEnglish && project.titleEn ? project.titleEn : project.title}</h3>
               <p className="card__text">{project.description[language]}</p>
 
@@ -64,8 +82,22 @@ export default function Projects({ language }) {
               </div>
 
               <div className="card__links">
-                <a href={project.live} target="_blank" rel="noopener noreferrer">{isEnglish ? "Live Demo" : "Ver online"}</a>
-                <a href={project.repo} target="_blank" rel="noopener noreferrer">{isEnglish ? "Repository" : "Repositório"}</a>
+                <a
+                  className="card__link card__link--primary"
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {isEnglish ? "Live Demo" : "Ver online"}
+                </a>
+                <a
+                  className="card__link"
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {isEnglish ? "Repository" : "Repositório"}
+                </a>
               </div>
             </div>
           ))}

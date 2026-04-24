@@ -9,6 +9,7 @@
   --accent: #7c3aed;
   --nav-bg: rgba(11, 15, 25, 0.75);
   --section-alt: rgba(7, 10, 18, 0.75);
+  --nav-offset: 88px;
 }
 
 :root[data-theme="light"] {
