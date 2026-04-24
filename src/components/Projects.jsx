@@ -18,6 +18,7 @@ const projects = [
       "pt-BR": "Hospedado no Render: o primeiro carregamento pode demorar alguns segundos.",
       "en-US": "Hosted on Render: the first load may take a few seconds."
     },
+    video: "https://youtu.be/MuBE76vhMYA",
     repo: "https://github.com/tamicoding/book-notes"
   },
   {
@@ -94,6 +95,16 @@ export default function Projects({ language }) {
                 >
                   {isEnglish ? "Live Demo" : "Ver online"}
                 </a>
+                {project.video && (
+                  <a
+                    className="card__link"
+                    href={project.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {isEnglish ? "Demo Video" : "Vídeo demo"}
+                  </a>
+                )}
                 <a
                   className="card__link"
                   href={project.repo}
