@@ -59,7 +59,8 @@ A interface foi criada para ser simples de navegar, responsiva em diferentes tam
 
 - BookNotes: aplicação full stack para organizar leituras, avaliações e status de livros.  
   Deploy: https://book-notes-vvs0.onrender.com  
-  Repositório: https://github.com/tamicoding/book-notes
+  Repositório: https://github.com/tamicoding/book-notes  
+  Observação: hospedado no Render, então o primeiro carregamento pode demorar alguns segundos.
 - Simon Game: jogo de memória em React com progressão de níveis e validação de sequência.  
   Deploy: https://simon-game-react-nine.vercel.app/  
   Repositório: https://github.com/tamicoding/simon-game-react
@@ -106,7 +107,8 @@ This portfolio presents my selected projects, technical skills, language/theme s
 
 ## Featured Projects
 
-- BookNotes: [Live Demo](https://book-notes-vvs0.onrender.com) | [Repository](https://github.com/tamicoding/book-notes)
+- BookNotes: [Live Demo](https://book-notes-vvs0.onrender.com) | [Repository](https://github.com/tamicoding/book-notes)  
+  Note: hosted on Render, so the first load may take a few seconds.
 - Simon Game: [Live Demo](https://simon-game-react-nine.vercel.app/) | [Repository](https://github.com/tamicoding/simon-game-react)
 - Star Wars Universe: [Live Demo](https://tamicoding.github.io/starwars-universe/) | [Repository](https://github.com/tamicoding/starwars-universe)
 - Sages of the Multiverse: [Live Demo](https://sabios-do-multiverso.vercel.app/) | [Repository](https://github.com/tamicoding/sabios-do-multiverso)

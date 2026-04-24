@@ -14,6 +14,10 @@ const projects = [
     },
     tech: ["React", "Node.js", "PostgreSQL"],
     live: "https://book-notes-vvs0.onrender.com",
+    liveNote: {
+      "pt-BR": "Hospedado no Render: o primeiro carregamento pode demorar alguns segundos.",
+      "en-US": "Hosted on Render: the first load may take a few seconds."
+    },
     repo: "https://github.com/tamicoding/book-notes"
   },
   {
@@ -99,6 +103,9 @@ export default function Projects({ language }) {
                   {isEnglish ? "Repository" : "Repositório"}
                 </a>
               </div>
+              {project.liveNote && (
+                <p className="card__note">{project.liveNote[language]}</p>
+              )}
             </div>
           ))}
         </div>

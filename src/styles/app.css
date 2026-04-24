@@ -338,6 +338,13 @@
   color: #fff;
 }
 
+.card__note {
+  margin: 10px 0 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
 .card:hover {
   transform: translateY(-4px);
   border-color: #2b3548;
