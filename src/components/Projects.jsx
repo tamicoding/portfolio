@@ -54,7 +54,7 @@ const projects = [
       "pt-BR": "Aplicação para exibir citações traduzidas de forma dinâmica. Integrei API para buscar frases em tempo real, organizei autores e renderizei o conteúdo com atualização direta na interface.",
       "en-US": "Application for displaying translated quotes dynamically. I integrated an API to fetch quotes in real time, organized authors, and rendered updated content directly in the interface."
     },
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["React", "JavaScript"],
     live: "https://sabios-do-multiverso.vercel.app/",
     repo: "https://github.com/tamicoding/sabios-do-multiverso"
   }
