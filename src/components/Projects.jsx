@@ -12,7 +12,7 @@ const projects = [
       "pt-BR": "Aplicação full stack para gerenciar leituras. Implementei CRUD completo, persistência em PostgreSQL, integração com API externa e interface em React para cadastrar, editar e acompanhar livros.",
       "en-US": "Full-stack app for managing reading progress. I implemented full CRUD, PostgreSQL persistence, external API integration, and a React interface to create, edit, and track books."
     },
-    tech: ["React", "Node.js", "PostgreSQL"],
+    tech: ["EJS", "JavaScript", "Node.js", "PostgreSQL"],
     live: "https://book-notes-vvs0.onrender.com",
     liveNote: {
       "pt-BR": "Hospedado no Render: o primeiro carregamento pode demorar alguns segundos.",
