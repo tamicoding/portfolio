@@ -9,8 +9,8 @@ const projects = [
     image: booksPreview,
     imageAlt: "Preview do projeto BookNotes",
     description: {
-      "pt-BR": "Aplicação full stack para gerenciar leituras. Implementei CRUD completo, persistência em PostgreSQL, integração com API externa e interface em React para cadastrar, editar e acompanhar livros.",
-      "en-US": "Full-stack app for managing reading progress. I implemented full CRUD, PostgreSQL persistence, external API integration, and a React interface to create, edit, and track books."
+      "pt-BR": "Aplicação full stack para gerenciar leituras. Implementei CRUD completo, persistência em PostgreSQL, integração com API externa e interface em EJS para cadastrar, editar e acompanhar livros.",
+      "en-US": "Full-stack app for managing reading progress. I implemented full CRUD, PostgreSQL persistence, external API integration, and a EJS interface to create, edit, and track books."
     },
     tech: ["EJS", "JavaScript", "Node.js", "PostgreSQL"],
     live: "https://book-notes-vvs0.onrender.com",
